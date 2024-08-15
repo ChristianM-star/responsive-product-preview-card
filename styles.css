@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@500,700;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    margin: 1.3rem;
+    background-color: var(--Cream);
+    font-family:'Fraunces', sans-serif ;
+}
+
+
+.container{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    border-radius: 1rem;
+    
+    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+    gap: 1rem;
+    
+}
+
+#product-img{
+object-fit: cover;
+ width: 100%; 
+border-radius: 1rem 1rem 0 0;
+}
+
+
+.product{
+    text-transform: uppercase;
+    letter-spacing: 0.2cm;
+    color: var(--Dark-grayish-blue);
+}
+
+h1{
+    font-weight: 900;
+    font-family:  Cambria, Cochin, Georgia, Times,  'Times New Roman', serif;
+    font-size: 3rem;
+}
+
+.paragraph{
+    font-family: 'Monsterrat', sans-serif;
+    line-height: 1.8;
+    color: var(--Dark-grayish-blue);
+} 
+
+
+.main-price{
+    color: var(--Dark-cyan);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family:'Montserrat',sans-serif;
+}
+
+.old-price{
+    font-size: .6em;
+    margin-left: 20px;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+button{
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    padding: 10px;
+    border-radius: .8em;
+border: 1px solid var(--Dark-cyan);
+}
+
+
+@media(max-width:600px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media(min-width:600px){
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    #product-img{
+        object-fit: cover;
+         width: 100%; 
+        border-radius:  0;
+        }
+        
+}
